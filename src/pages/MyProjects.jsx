@@ -7,25 +7,41 @@ function MyProjects() {
             id: 1,
             title: "Portfolio Website",
             description: "A personal portfolio website built with React and React Router.",
-            technologies: ["React", "CSS", "Vite"]
+            technologies: ["React", "CSS", "Vite"],
+            githubUrl: "https://github.com/DavidGT0/my_website",
+            liveUrl: null
         },
         {
             id: 2,
             title: "Pac Man Game",
             description: "interactive JavaScript-based game controlled by a wireless ESP32 remote.",
-            technologies: ["JavaScript", "HTML", "CSS", "Arduino", "C++"]
+            technologies: ["JavaScript", "HTML", "CSS", "Arduino", "C++"],
+            githubUrl: "https://github.com/DavidGT0/pac_man_game",
+            liveUrl: "https://davidgt0.github.io/pac_man_game"
         },
         {
             id: 3,
             title: "Simon Says",
             description: "An embedded Simon Says memory game developed in C++ on Arduino, demonstrating low-level hardware control, real-time input handling, and state-based game logic.",
-            technologies: ["C++", "Arduino"]
+            technologies: ["C++", "Arduino"],
+            githubUrl: "https://github.com/DavidGT0/simon_says",
+            liveUrl: null
         },
         {
             id: 4,
             title: "To Do List",
-            description: "A full-stack To Do list application built using JavaScript and Node.js, The project implements RESTful APIs, CRUD operations, and database-baked persistence using phpMyAdmin.",
-            technologies: ["JavaScript", "Node.js", "SQL"]
+            description: "A full-stack To Do List application built using JavaScript and Node.js, The project implements RESTful APIs, CRUD operations, and database-baked persistence using phpMyAdmin.",
+            technologies: ["JavaScript", "Node.js", "SQL"],
+            githubUrl: "https://github.com/DavidGT0/todo_list",
+            liveUrl: null
+        },
+        {
+            id: 5,
+            title: "Memory Game",
+            description: "A simple memory game built using JavaScript and HTML.",
+            technologies: ["JavaScript", "HTML"],
+            githubUrl: "https://github.com/DavidGT0/memory_game",
+            liveUrl: "https://davidgt0.github.io/memory_game"
         }
     ];
     return (
@@ -40,6 +56,16 @@ function MyProjects() {
                             {project.technologies.map((tech, index) => (
                                 <span key={index} className="tech-badge">{tech}</span>
                             ))}
+                        </div>
+                        <div className="card-links">
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
+                               className="github-link">View on GitHub
+                            </a>
+                            {project.liveUrl && (
+                                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+                                   className="live-demo-link">Live Demo
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}
