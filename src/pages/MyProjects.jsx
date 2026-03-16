@@ -42,6 +42,14 @@ function MyProjects() {
             technologies: ["JavaScript", "HTML"],
             githubUrl: "https://github.com/DavidGT0/memory_game",
             liveUrl: "https://davidgt0.github.io/memory_game"
+        },
+        {
+            id: 6,
+            title: "my-math-app",
+            description: "Fun and responsive math game for kids – practice addition, subtraction, multiplication, and division.",
+            technologies: ["React", "CSS", "Vite"],
+            githubUrl: "https://github.com/DavidGT0/my-math-app",
+            liveUrl: "https://davidgt0.github.io/my-math-app"
         }
     ];
     return (
