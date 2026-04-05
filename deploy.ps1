@@ -22,14 +22,8 @@ $SERVER = "ubuntu@dgazit.tech"
 Write-Host "--- Uploading to AWS... ---" -ForegroundColor Cyan
 scp -i $KEY_PATH -r dist "${SERVER}:/tmp/"
 
-# 5. פריסה בשרת
+# 5. פריסה בשרת (בשורה אחת כדי למנוע בעיות של מעברי שורה מווינדוס ללינוקס)
 Write-Host "--- Deploying on Server... ---" -ForegroundColor Cyan
-ssh -i $KEY_PATH $SERVER "
-    sudo rm -rf /var/www/html/*;
-    sudo cp -r /tmp/dist/* /var/www/html/;
-    sudo chown -R www-data:www-data /var/www/html/;
-    sudo rm -rf /tmp/dist;
-    sudo systemctl restart nginx
-"
+ssh -i $KEY_PATH $SERVER "sudo rm -rf /var/www/html/*; sudo cp -r /tmp/dist/* /var/www/html/; sudo chown -R www-data:www-data /var/www/html/; sudo rm -rf /tmp/dist; sudo systemctl restart nginx"
 
 Write-Host "--- ALL DONE! ---" -ForegroundColor Green
