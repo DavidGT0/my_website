@@ -50,6 +50,14 @@ function MyProjects() {
             technologies: ["React", "CSS", "Vite"],
             githubUrl: "https://github.com/DavidGT0/my-math-app",
             liveUrl: "https://davidgt0.github.io/my-math-app"
+        },
+        {
+          id: 7,
+          title: "escape_room_iot",
+          description: "A dual-ESP8266 IoT Escape Room system featuring synchronized sensory puzzles, real-time WiFi communication, and a central locking mechanism.",
+          technologies: ["Arduino", "C++", "ESP8266", "WiFi"],
+          githubUrl: "https://github.com/DavidGT0/escape_room_iot",
+          liveUrl: null  
         }
     ];
     return (
