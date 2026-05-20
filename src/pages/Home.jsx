@@ -1,8 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <div className="home-container">
             <section className="hero">
@@ -11,8 +17,12 @@ function Home() {
                 <p>I build web applications, interactive projects, and hardware-integrated solutions.</p>
                 <p>Discover my projects and technical skills.</p>
                 <div className="hero-buttons">
-                    <Link to="/projects" className="btn-primary">My Projects</Link>
-                    <Link to="/contact" className="btn-outline">Contact Me</Link>
+                    <button onClick={() => scrollToSection('projects')} className="btn-primary">
+                        My Projects
+                    </button>
+                    <button onClick={() => scrollToSection('contact')} className="btn-outline">
+                        Contact Me
+                    </button>
                 </div>
             </section>
         </div>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Section spacing */
+#home,
+#projects,
+#about,
+#contact {
+    scroll-margin-top: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Add subtle section dividers */
+#projects::before,
+#about::before,
+#contact::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(74, 158, 255, 0.4), transparent);
+    margin: 0 auto 2rem;
+    max-width: 80%;
+}

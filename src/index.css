@@ -1,70 +1,77 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Dark Mode Colors */
+  --dark-bg: #0F1419;
+  --dark-bg-secondary: #1A1F2E;
+  --dark-bg-card: #252D3D;
+  --dark-bg-card-hover: #2D3548;
 
-  --primary-color: #4aa8c0;       /* softer, less neon teal-blue */
-  --primary-hover-color: #3a8fa6;
-  --bg-main: #0a0f1e;
-  --bg-card: #0d1b2a;
-  --bg-card-alt: #112240;
-  --text-main: rgba(255, 255, 255, 0.9);
-  --text-muted: rgba(255, 255, 255, 0.6);
+  /* Warm Tech Accents */
+  --terracotta: #FF6B5A;
+  --terracotta-light: #FF8A7A;
+  --electric-blue: #4A9EFF;
+  --tech-cyan: #5FFFD7;
+  --tech-purple: #B794F6;
+  --warm-orange: #FFB366;
 
-  color-scheme: dark;
-  color: var(--text-main);
-  background-color: var(--bg-main);
+  /* Text Colors */
+  --text-primary: #E8E9ED;
+  --text-secondary: #A0A4B8;
+  --text-muted: #72768C;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Neutrals */
+  --border-color: rgba(74, 158, 255, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: var(--primary-color);
-  text-decoration: inherit;
-}
-a:hover {
-  color: var(--primary-hover-color);
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
   overflow-x: hidden;
-  background-color: var(--bg-main);
+  position: relative;
 }
 
-#root {
-  width: 100%;
-  overflow-x: hidden;
+/* Tech Grid Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+          linear-gradient(rgba(74, 158, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(74, 158, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* REMOVED: Animated Tech Accent (body::after) */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
 }
 
-button {
-  border-radius: 50px;
-  border: 2px solid var(--primary-color);
-  padding: 0.6em 1.5em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: transparent;
-  color: var(--primary-color);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-button:hover {
-  background-color: var(--primary-color);
-  color: #0a0f1e;
+/* Tech Glow Effect for Spans */
+span {
+  background: linear-gradient(135deg, var(--terracotta), var(--electric-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

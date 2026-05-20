@@ -66,22 +66,26 @@ function MyProjects() {
             <div className="projects-grid">
                 {projects.map(project => (
                     <div key={project.id} className="project-card">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <div className="tech-stack">
-                            {project.technologies.map((tech, index) => (
-                                <span key={index} className="tech-badge">{tech}</span>
-                            ))}
+                        <div className="card-top">
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
                         </div>
-                        <div className="card-links">
-                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
-                               className="github-link">View on GitHub
-                            </a>
-                            {project.liveUrl && (
-                                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
-                                   className="live-demo-link">Live Demo
+                        <div className="card-bottom">
+                            <div className="tech-stack">
+                                {project.technologies.map((tech, index) => (
+                                    <span key={index} className="tech-badge">{tech}</span>
+                                ))}
+                            </div>
+                            <div className="card-links">
+                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
+                                   className="github-link">View on GitHub
                                 </a>
-                            )}
+                                {project.liveUrl && (
+                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+                                       className="live-demo-link">Live Demo
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </div>
                 ))}
