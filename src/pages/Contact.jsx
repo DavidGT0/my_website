@@ -1,11 +1,14 @@
 import React from 'react';
+import { useLanguage } from '../LanguageContext';
 import './Contact.css';
 
 function Contact() {
+    const { t } = useLanguage();
+
     return (
         <div className="contact-container">
-            <h1>Contact <span>Me!</span></h1>
-            <p>Feel free to contact me! I'd love to hear from you.</p>
+            <h1>{t('contact1')}<span>{t('contact2')}</span></h1>
+            <p>{t('contactDesc')}</p>
 
             <div className="contact-info">
                 <div className="contact-item">
@@ -13,7 +16,7 @@ function Contact() {
                     <div className="contact-item-body">
                         <h3>LinkedIn</h3>
                         <a href="https://www.linkedin.com/in/davidgazit/" className="email-button" target="_blank" rel="noopener noreferrer">
-                            My LinkedIn Profile
+                            {t('linkedInProfile')}
                         </a>
                     </div>
                 </div>

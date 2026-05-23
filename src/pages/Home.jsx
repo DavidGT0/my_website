@@ -1,7 +1,10 @@
 import React from 'react';
+import { useLanguage } from '../LanguageContext';
 import './Home.css';
 
 function Home() {
+    const { t } = useLanguage();
+
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -12,16 +15,16 @@ function Home() {
     return (
         <div className="home-container">
             <section className="hero">
-                <h1>Hello, I'm <span>David Gazit</span></h1>
-                <h2>Practical Software Engineering Student | Full Stack Developer</h2>
-                <p>I build web applications, interactive projects, and hardware-integrated solutions.</p>
-                <p>Discover my projects and technical skills.</p>
+                <h1>{t('hello')}<span>{t('name')}</span></h1>
+                <h2>{t('homeSubtitle')}</h2>
+                <p>{t('homeDesc1')}</p>
+                <p>{t('homeDesc2')}</p>
                 <div className="hero-buttons">
                     <button onClick={() => scrollToSection('projects')} className="btn-primary">
-                        My Projects
+                        {t('btnProjects')}
                     </button>
                     <button onClick={() => scrollToSection('contact')} className="btn-outline">
-                        Contact Me
+                        {t('btnContact')}
                     </button>
                 </div>
             </section>

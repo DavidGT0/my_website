@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../LanguageContext'; // ודא שהנתיב לקובץ ה-Context נכון
 import './Nav.css';
 
 function Nav() {
     const [activeSection, setActiveSection] = useState('home');
+    const { t, toggleLanguage } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,44 +40,49 @@ function Nav() {
         <nav className="navbar">
             <div className="nav-container">
                 <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="nav-logo">
-                    Portfolio
+                    {t('logo')}
                 </a>
                 <ul className="nav-menu">
                     <li className="nav-item">
-                        <a 
-                            href="#home" 
+                        <a
+                            href="#home"
                             onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
                             className={activeSection === 'home' ? "nav-links active" : "nav-links"}
                         >
-                            Home
+                            {t('navHome')}
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a 
-                            href="#projects" 
+                        <a
+                            href="#projects"
                             onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
                             className={activeSection === 'projects' ? "nav-links active" : "nav-links"}
                         >
-                            Projects
+                            {t('navProjects')}
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a 
-                            href="#about" 
+                        <a
+                            href="#about"
                             onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
                             className={activeSection === 'about' ? "nav-links active" : "nav-links"}
                         >
-                            About
+                            {t('navAbout')}
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a 
-                            href="#contact" 
+                        <a
+                            href="#contact"
                             onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                             className={activeSection === 'contact' ? "nav-links active" : "nav-links"}
                         >
-                            Contact
+                            {t('navContact')}
                         </a>
+                    </li>
+                    <li className="nav-item">
+                        <button onClick={toggleLanguage} className="lang-toggle-btn">
+                            {t('toggleLanguage')}
+                        </button>
                     </li>
                 </ul>
             </div>

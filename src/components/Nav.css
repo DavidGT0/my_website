@@ -130,3 +130,21 @@
         gap: 1rem;
     }
 }
+
+.lang-toggle-btn {
+    background: transparent;
+    border: 1px solid currentColor; /* יוצר מסגרת עדינה בצבע של הטקסט */
+    color: inherit; /* יורש את הצבע של ה-navbar (לבן/שחור) */
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-inline-start: 15px; /* מרווח יפה מהפריט האחרון בהתאם לכיוון הדף */
+    transition: all 0.3s ease;
+}
+
+.lang-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.15); /* אפקט עדין בריחוף */
+}
