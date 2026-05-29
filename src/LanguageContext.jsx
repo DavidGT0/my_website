@@ -59,7 +59,14 @@ const translations = {
         proj6_desc: "Fun and responsive math game for kids – practice addition, subtraction, multiplication, and division.",
 
         proj7_title: "Escape Room IoT",
-        proj7_desc: "A dual-ESP8266 IoT Escape Room system featuring synchronized sensory puzzles, real-time WiFi communication, and a central locking mechanism."
+        proj7_desc: "A dual-ESP8266 IoT Escape Room system featuring synchronized sensory puzzles, real-time WiFi communication, and a central locking mechanism.",
+        
+        proj8_title: "Full-Stack IoT Climate Monitoring System",
+        proj8_desc: "An end-to-end IoT project that bridges physical hardware and cloud software. The system features an ESP32 microcontroller that collects live temperature and humidity data and securely transmits it to a custom cloud backend built with Node.js and Express.\n" +
+            "\n" +
+            "To ensure production-grade reliability, the API incorporates strict security measures against vulnerabilities like NoSQL Injection, XSS, and DoS attacks. The data is stored in MongoDB Atlas and visualized through a dynamic, responsive React web dashboard.\n" +
+            "\n" +
+            "This project demonstrates practical expertise in cloud architecture, database management, web security, and embedded systems integration.",
     },
     he: {
         // Nav
@@ -119,7 +126,10 @@ const translations = {
         proj6_desc: "משחק מתמטיקה מהנה ורספונסיבי לילדים – לתרגול חיבור, חיסור, כפל וחילוק.",
 
         proj7_title: "חדר בריחה IoT",
-        proj7_desc: "מערכת חדר בריחה IoT מבוססת שני בקרי ESP8266 הכוללת חידות חיישנים מסונכרנות, תקשורת WiFi בזמן אמת ומנגנון נעילה מרכזי."
+        proj7_desc: "מערכת חדר בריחה IoT מבוססת שני בקרי ESP8266 הכוללת חידות חיישנים מסונכרנות, תקשורת WiFi בזמן אמת ומנגנון נעילה מרכזי.",
+        
+        proj8_title: "מערכת ניטור אקלים מבוססת IoT (Full-Stack IoT Project)",
+        proj8_desc: "פרויקט קצה-לקצה המשלב עולמות של חומרה ותוכנה. המערכת כוללת מיקרו-בקר ESP32 האוסף נתוני טמפרטורה ולחות בזמן אמת ושולח אותם לשרת ענן מאובטח שפיתחתי ב-Node.js. המערכת כוללת מנגנוני אבטחה מחמירים למניעת פרצות (Injection, XSS, DoS) ומציגה את הנתונים בלוח בקרה (Dashboard) דינמי ב-React. פרויקט זה הפגין יכולת שליטה בטכנולוגיות ענן, מסדי נתונים ופיתוח Full-Stack מאובטח."
     }
 };
 

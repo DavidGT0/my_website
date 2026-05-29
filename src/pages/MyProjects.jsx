@@ -10,7 +10,7 @@ function MyProjects() {
             id: 1,
             title: t('proj1_title'),
             description: t('proj1_desc'),
-            technologies: ["React", "CSS", "Vite"],
+            technologies: ["React", "CSS", "Vite", "AWS"],
             githubUrl: "https://github.com/DavidGT0/my_website",
             liveUrl: null
         },
@@ -61,6 +61,14 @@ function MyProjects() {
             technologies: ["Arduino", "C++", "ESP8266", "WiFi"],
             githubUrl: "https://github.com/DavidGT0/escape_room_iot",
             liveUrl: null
+        },
+        {
+            id: 8,
+            title: t('proj8_title'),
+            description: t('proj8_desc'),
+            technologies: ["ESP32", "Node.js", "MongoDB", "React", "C++", "Vite"],
+            githubUrl: "https://github.com/DavidGT0/Temperature_sensor",
+            liveUrl: "https://temperature-sensor-kappa.vercel.app"
         }
     ];
 
