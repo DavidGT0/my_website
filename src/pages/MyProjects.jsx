@@ -10,9 +10,9 @@ function MyProjects() {
             id: 1,
             title: t('proj1_title'),
             description: t('proj1_desc'),
-            technologies: ["React", "CSS", "Vite", "AWS"],
-            githubUrl: "https://github.com/DavidGT0/my_website",
-            liveUrl: null
+            technologies: ["ESP32", "Node.js", "MongoDB", "React", "C++", "Vite", "Render", "Vercel"],
+            githubUrl: "https://github.com/DavidGT0/Temperature_sensor",
+            liveUrl: "https://temperature-sensor-kappa.vercel.app"
         },
         {
             id: 2,
@@ -66,9 +66,9 @@ function MyProjects() {
             id: 8,
             title: t('proj8_title'),
             description: t('proj8_desc'),
-            technologies: ["ESP32", "Node.js", "MongoDB", "React", "C++", "Vite"],
-            githubUrl: "https://github.com/DavidGT0/Temperature_sensor",
-            liveUrl: "https://temperature-sensor-kappa.vercel.app"
+            technologies: ["React", "CSS", "Vite", "AWS"],
+            githubUrl: "https://github.com/DavidGT0/my_website",
+            liveUrl: null
         }
     ];
 

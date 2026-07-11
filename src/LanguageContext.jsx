@@ -40,8 +40,12 @@ const translations = {
         viewGithub: "View on GitHub",
         liveDemo: "Live Demo",
 
-        proj1_title: "Portfolio Website",
-        proj1_desc: "A personal portfolio website built with React and React Router.",
+        proj1_title: "Full-Stack IoT Climate Monitoring System",
+        proj1_desc: "An end-to-end IoT project that bridges physical hardware and cloud software. The system features an ESP32 microcontroller that collects live temperature and humidity data and securely transmits it to a custom cloud backend built with Node.js and Express.\n" +
+            "\n" +
+            "To ensure production-grade reliability, the API incorporates strict security measures against vulnerabilities like NoSQL Injection, XSS, and DoS attacks. The data is stored in MongoDB Atlas and visualized through a dynamic, responsive React web dashboard.\n" +
+            "\n" +
+            "This project demonstrates practical expertise in cloud architecture, database management, web security, and embedded systems integration.",
 
         proj2_title: "Pac Man Game",
         proj2_desc: "Interactive JavaScript-based game controlled by a wireless ESP32 remote.",
@@ -61,12 +65,8 @@ const translations = {
         proj7_title: "Escape Room IoT",
         proj7_desc: "A dual-ESP8266 IoT Escape Room system featuring synchronized sensory puzzles, real-time WiFi communication, and a central locking mechanism.",
         
-        proj8_title: "Full-Stack IoT Climate Monitoring System",
-        proj8_desc: "An end-to-end IoT project that bridges physical hardware and cloud software. The system features an ESP32 microcontroller that collects live temperature and humidity data and securely transmits it to a custom cloud backend built with Node.js and Express.\n" +
-            "\n" +
-            "To ensure production-grade reliability, the API incorporates strict security measures against vulnerabilities like NoSQL Injection, XSS, and DoS attacks. The data is stored in MongoDB Atlas and visualized through a dynamic, responsive React web dashboard.\n" +
-            "\n" +
-            "This project demonstrates practical expertise in cloud architecture, database management, web security, and embedded systems integration.",
+        proj8_title: "Portfolio Website",
+        proj8_desc: "A personal portfolio website built with React and React Router.",
     },
     he: {
         // Nav
@@ -107,8 +107,8 @@ const translations = {
         viewGithub: "צפייה ב-GitHub",
         liveDemo: "הדגמה חיה",
 
-        proj1_title: "אתר פורטפוליו",
-        proj1_desc: "אתר פורטפוליו אישי שנבנה באמצעות React ו-React Router.",
+        proj1_title: "מערכת ניטור אקלים מבוססת IoT (Full-Stack IoT Project)",
+        proj1_desc: "פרויקט קצה-לקצה המשלב עולמות של חומרה ותוכנה. המערכת כוללת מיקרו-בקר ESP32 האוסף נתוני טמפרטורה ולחות בזמן אמת ושולח אותם לשרת ענן מאובטח שפיתחתי ב-Node.js. המערכת כוללת מנגנוני אבטחה מחמירים למניעת פרצות (Injection, XSS, DoS) ומציגה את הנתונים בלוח בקרה (Dashboard) דינמי ב-React. פרויקט זה הפגין יכולת שליטה בטכנולוגיות ענן, מסדי נתונים ופיתוח Full-Stack מאובטח.",
 
         proj2_title: "משחק פקמן",
         proj2_desc: "משחק אינטראקטיבי מבוסס JavaScript שנשלט על ידי שלט ESP32 אלחוטי.",
@@ -128,8 +128,8 @@ const translations = {
         proj7_title: "חדר בריחה IoT",
         proj7_desc: "מערכת חדר בריחה IoT מבוססת שני בקרי ESP8266 הכוללת חידות חיישנים מסונכרנות, תקשורת WiFi בזמן אמת ומנגנון נעילה מרכזי.",
         
-        proj8_title: "מערכת ניטור אקלים מבוססת IoT (Full-Stack IoT Project)",
-        proj8_desc: "פרויקט קצה-לקצה המשלב עולמות של חומרה ותוכנה. המערכת כוללת מיקרו-בקר ESP32 האוסף נתוני טמפרטורה ולחות בזמן אמת ושולח אותם לשרת ענן מאובטח שפיתחתי ב-Node.js. המערכת כוללת מנגנוני אבטחה מחמירים למניעת פרצות (Injection, XSS, DoS) ומציגה את הנתונים בלוח בקרה (Dashboard) דינמי ב-React. פרויקט זה הפגין יכולת שליטה בטכנולוגיות ענן, מסדי נתונים ופיתוח Full-Stack מאובטח."
+        proj8_title: "אתר פורטפוליו",
+        proj8_desc: "אתר פורטפוליו אישי שנבנה באמצעות React ו-React Router.",
     }
 };
 
